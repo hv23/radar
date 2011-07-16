@@ -7,3 +7,6 @@
 [submodule "Classes/Vendors/JSONKit"]
 	path = Classes/Vendors/JSONKit
 	url = https://github.com/johnezang/JSONKit
+[submodule "Classes/Vendors/three20"]
+	path = Classes/Vendors/three20
+	url = git://github.com/facebook/three20.git
