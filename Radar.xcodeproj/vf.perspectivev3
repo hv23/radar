@@ -270,16 +270,26 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>B5A097BD13D1FFA40074900C</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>B5A097C713D204830074900C</string>
+								<string>B5A0987A13D204DB0074900C</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C77FABC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>1</integer>
+									<integer>16</integer>
+									<integer>15</integer>
+									<integer>14</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>17</integer>
+									<integer>15</integer>
+									<integer>14</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -301,7 +311,7 @@
 							<real>185</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>195 137 974 610 0 0 1280 778 </string>
+						<string>96 147 974 610 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -317,7 +327,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>B5A20D1D1322F253009B1E08</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RadarAppDelegate.m</string>
+								<string>IntroViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,14 +335,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>B5A20D1E1322F253009B1E08</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RadarAppDelegate.m</string>
+										<string>IntroViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>B5A097AF13D1FF7C0074900C</string>
+										<string>B5A0988313D2052C0074900C</string>
 										<key>history</key>
 										<array>
-											<string>B5A097AE13D1FF7C0074900C</string>
+											<string>B5A097C813D2048B0074900C</string>
+											<string>B5A097C913D2048B0074900C</string>
+											<string>B5A097CA13D2048B0074900C</string>
+											<string>B5A097CB13D2048B0074900C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -348,7 +361,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {767, 564}}</string>
 								<key>RubberWindowFrame</key>
-								<string>195 137 974 610 0 0 1280 778 </string>
+								<string>96 147 974 610 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -373,7 +386,7 @@
 										<key>Frame</key>
 										<string>{{10, 27}, {767, -27}}</string>
 										<key>RubberWindowFrame</key>
-										<string>195 137 974 610 0 0 1280 778 </string>
+										<string>96 147 974 610 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -652,7 +665,7 @@
 		<string>/Users/vf/programming/iOS/Radar/Radar.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>195 137 974 610 0 0 1280 778 </string>
+	<string>96 147 974 610 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
