@@ -11,7 +11,7 @@
 @implementation RadarAppDelegate
 
 @synthesize window;
-
+@synthesize introViewController, facebook;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -19,7 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after application launch.
-    
+	introViewController = [[IntroViewController alloc] init];
+    self.window.rootViewController = introViewController;
     [self.window makeKeyAndVisible];
     
     return YES;
