@@ -313,6 +313,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -330,13 +332,13 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>B5A098AF13D2082C0074900C</string>
+										<string>B5A098E913D20EE80074900C</string>
 										<key>history</key>
 										<array>
 											<string>B5A0989F13D207DB0074900C</string>
-											<string>B5A098A013D207DB0074900C</string>
-											<string>B5A098A113D207DB0074900C</string>
-											<string>B5A098AE13D2082A0074900C</string>
+											<string>B5A098BF13D20B360074900C</string>
+											<string>B5A098E513D20ECC0074900C</string>
+											<string>B5A098E613D20ECC0074900C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -653,6 +655,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>B5A098E813D20ECC0074900C</string>
+		<string>B5A098DC13D20E640074900C</string>
+		<string>B5A098DD13D20E640074900C</string>
+		<string>B55B688213335FA300FD9D7F</string>
 		<string>/Users/vf/programming/iOS/Radar/Radar.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -1409,7 +1415,7 @@
 									<real>22</real>
 								</array>
 								<key>RubberWindowFrame</key>
-								<string>400 398 616 374 0 0 1680 1028 </string>
+								<string>250 255 616 374 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXClassBrowserModule</string>
@@ -1432,13 +1438,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>B55B688213335FA300FD9D7F</string>
-				<string>B55B688313335FA300FD9D7F</string>
+				<string>B5A098BA13D20AD00074900C</string>
 				<string>1CA6456E063B45B4001379D8</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.classbrowser</string>
 			<key>WindowString</key>
-			<string>400 398 616 374 0 0 1680 1028 </string>
+			<string>250 255 616 374 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>B55B688213335FA300FD9D7F</string>
 			<key>WindowToolIsVisible</key>

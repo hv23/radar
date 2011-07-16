@@ -23,6 +23,15 @@
     self.window.rootViewController = introViewController;
     [self.window makeKeyAndVisible];
     
+	//FB stuff
+	facebook = [[Facebook alloc] initWithAppId:@"138091546272430"];
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	if ([defaults objectForKey:@"FBAccessTokenKey"] 
+        && [defaults objectForKey:@"FBExpirationDateKey"]) {
+        facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
+        facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
+	}
+	
     return YES;
 }
 
@@ -64,6 +73,27 @@
      */
 }
 
+#pragma mark -
+#pragma mark Facebook
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [facebook handleOpenURL:url]; 
+}
+
+- (void)fbDidLogin {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
+    [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
+    [defaults synchronize];
+}
+
+- (void) authorizeFB {
+	NSArray* permissions = [NSArray arrayWithObjects:
+		@"friends_checkins", @"friends_location",  @"friends_hometown", nil];
+	if (![facebook isSessionValid]) {
+		[facebook authorize:permissions delegate:self];
+	}
+}
 
 #pragma mark -
 #pragma mark Memory management

@@ -7,7 +7,7 @@
 //
 
 #import "IntroViewController.h"
-
+#import "RadarAppDelegate.h"
 
 @implementation IntroViewController
 @synthesize facebookButton;
@@ -40,6 +40,9 @@
 
 #pragma mark UI Code
 - (IBAction)facebookSignin {
+	RadarAppDelegate *delegate = 
+		(RadarAppDelegate *)[[UIApplication sharedApplication] delegate];
+	[delegate authorizeFB];
 }
 
 - (void)didReceiveMemoryWarning {
