@@ -58,6 +58,8 @@
 		B5A0999C13D23E0B0074900C /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A0999B13D23E0B0074900C /* Friend.m */; };
 		B5A09AC513D28FA90074900C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A09AC313D28FA90074900C /* DetailViewController.m */; };
 		B5A09AC613D28FA90074900C /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A09AC413D28FA90074900C /* DetailViewController.xib */; };
+		B5A09BC613D345A40074900C /* Detail2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A09BC413D345A40074900C /* Detail2ViewController.m */; };
+		B5A09BC713D345A40074900C /* Detail2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A09BC513D345A40074900C /* Detail2ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -322,6 +324,9 @@
 		B5A09AC213D28FA90074900C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		B5A09AC313D28FA90074900C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		B5A09AC413D28FA90074900C /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DetailViewController.xib; path = Classes/DetailViewController.xib; sourceTree = "<group>"; };
+		B5A09BC313D345A40074900C /* Detail2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail2ViewController.h; sourceTree = "<group>"; };
+		B5A09BC413D345A40074900C /* Detail2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail2ViewController.m; sourceTree = "<group>"; };
+		B5A09BC513D345A40074900C /* Detail2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Detail2ViewController.xib; path = Classes/Detail2ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,6 +407,7 @@
 			isa = PBXGroup;
 			children = (
 				B5A09AC413D28FA90074900C /* DetailViewController.xib */,
+				B5A09BC513D345A40074900C /* Detail2ViewController.xib */,
 				320B6C86F11D9990244A9730 /* Three20.bundle */,
 				B5A097B913D1FF970074900C /* IntroViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
@@ -505,6 +511,8 @@
 				B5A0997C13D239E20074900C /* FriendsViewController.m */,
 				B5A09AC213D28FA90074900C /* DetailViewController.h */,
 				B5A09AC313D28FA90074900C /* DetailViewController.m */,
+				B5A09BC313D345A40074900C /* Detail2ViewController.h */,
+				B5A09BC413D345A40074900C /* Detail2ViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -846,6 +854,7 @@
 				B5A097EB13D204A00074900C /* FBDialog.bundle in Resources */,
 				B5A0995B13D228DC0074900C /* LocationViewController.xib in Resources */,
 				B5A09AC613D28FA90074900C /* DetailViewController.xib in Resources */,
+				B5A09BC713D345A40074900C /* Detail2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -885,6 +894,7 @@
 				B5A0999713D23DFF0074900C /* FriendListModel.m in Sources */,
 				B5A0999C13D23E0B0074900C /* Friend.m in Sources */,
 				B5A09AC513D28FA90074900C /* DetailViewController.m in Sources */,
+				B5A09BC613D345A40074900C /* Detail2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@
 #import "FriendListDataSource.h"
 #import "Friend.h"
 #import "DetailViewController.h"
+#import "Detail2ViewController.h"
 
 @implementation FriendsViewController
 @synthesize location;
@@ -84,7 +85,7 @@
 		Friend *f = (Friend *)tableItem.userInfo;
 		NSLog(@"Clicked on %@", f.name);
 		
-		DetailViewController *dvc = [[DetailViewController alloc] initWithFriend:f];
+		UIViewController *dvc = [[Detail2ViewController alloc] initWithFriend:f];
 		[self.navigationController pushViewController:dvc animated:YES];
 		[dvc release];
 	}
