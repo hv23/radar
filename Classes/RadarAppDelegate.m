@@ -7,11 +7,15 @@
 //
 
 #import "RadarAppDelegate.h"
+#import "LocationViewController.h"
+#import "JSONKit.h"
 
 @implementation RadarAppDelegate
 
 @synthesize window;
-@synthesize introViewController, facebook;
+@synthesize introViewController, facebook, navigationController;
+
+static NSString *login_url = @"http://radar.dev/login.json";
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -81,18 +85,74 @@
 }
 
 - (void)fbDidLogin {
+	// Save tokens to defaults
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
     [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
     [defaults synchronize];
+	
+	// Send login request to server
+	[self loginToBackend];
+	
+	// Switch to 2nd screen
+	LocationViewController *lvc = [[LocationViewController alloc] init];
+	self.navigationController = [[UINavigationController alloc] initWithRootViewController:lvc];
+	[window addSubview:self.navigationController.view];
+	[lvc release];
 }
 
 - (void) authorizeFB {
 	NSArray* permissions = [NSArray arrayWithObjects:
 		@"friends_checkins", @"friends_location",  @"friends_hometown", nil];
-	if (![facebook isSessionValid]) {
+	if ([facebook isSessionValid]) {
+		[self fbDidLogin];
+	} else {
 		[facebook authorize:permissions delegate:self];
 	}
+}
+
+- (void) loginToBackend {
+	NSDictionary *fb_token = [NSMutableDictionary dictionaryWithObject:[facebook accessToken] forKey:@"token"]; 
+	NSDictionary *fb_creds = [NSMutableDictionary dictionaryWithObject:fb_token forKey:@"facebook"]; 
+	NSMutableArray *credentials = [[NSMutableArray alloc] initWithObjects:fb_creds, nil];
+
+	NSMutableDictionary *parcel = [[NSMutableDictionary alloc] init];
+	[parcel setObject:[RadarAppDelegate deviceId] forKey:@"device_udid"];
+	[parcel setObject:credentials forKey:@"credentials"];
+
+	
+	TTURLRequest *request = [TTURLRequest requestWithURL:login_url delegate:self];
+	request.cachePolicy = TTURLRequestCachePolicyNone;
+	[request setHttpMethod:@"POST"];
+	[request setHttpBody:[parcel JSONData]];
+	
+	[request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+	[request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+	[request setValue:[NSString stringWithFormat:@"%d", [[parcel JSONData] length]] 
+		forHTTPHeaderField:@"Content-Length"];
+		
+	//NSLog(@"this is me json: %@", [[NSString alloc] initWithData:[parcel JSONData] encoding:NSUTF8StringEncoding]);
+	request.response = [[[TTURLDataResponse alloc] init] autorelease];
+	[request send];
+		
+	TT_RELEASE_SAFELY(credentials);
+	TT_RELEASE_SAFELY(parcel);	
+}
+
+- (void)requestDidFinishLoad:(TTURLRequest*)request {
+	NSLog(@"logged in to backend");
+}
+
+static NSString *_deviceId = nil;
++ (NSString *) deviceId {	
+	if (!_deviceId) {
+#if TARGET_IPHONE_SIMULATOR
+		_deviceId = @"F2013F1F-97FE-594F-868D-135FA48FEFB0";
+#else
+		_deviceId = [[[UIDevice currentDevice] uniqueIdentifier] retain];
+#endif          
+	}	
+	return _deviceId;
 }
 
 #pragma mark -

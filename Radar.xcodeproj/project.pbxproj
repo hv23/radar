@@ -49,6 +49,15 @@
 		B5A0988713D205430074900C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A0988613D205430074900C /* SystemConfiguration.framework */; };
 		B5A0988913D205430074900C /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A0988813D205430074900C /* libz.1.2.3.dylib */; };
 		B5A0988B13D205520074900C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A0988A13D205520074900C /* CFNetwork.framework */; };
+		B5A0995A13D228DC0074900C /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A0995813D228DC0074900C /* LocationViewController.m */; };
+		B5A0995B13D228DC0074900C /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A0995913D228DC0074900C /* LocationViewController.xib */; };
+		B5A0997D13D239E20074900C /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A0997C13D239E20074900C /* FriendsViewController.m */; };
+		B5A0998813D23AAF0074900C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A0998713D23AAF0074900C /* CoreLocation.framework */; };
+		B5A0999013D23D810074900C /* FriendListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A0998F13D23D810074900C /* FriendListDataSource.m */; };
+		B5A0999713D23DFF0074900C /* FriendListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A0999613D23DFF0074900C /* FriendListModel.m */; };
+		B5A0999C13D23E0B0074900C /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A0999B13D23E0B0074900C /* Friend.m */; };
+		B5A09AC513D28FA90074900C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A09AC313D28FA90074900C /* DetailViewController.m */; };
+		B5A09AC613D28FA90074900C /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A09AC413D28FA90074900C /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -298,6 +307,21 @@
 		B5A0988613D205430074900C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B5A0988813D205430074900C /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		B5A0988A13D205520074900C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B5A0995713D228DC0074900C /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		B5A0995813D228DC0074900C /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		B5A0995913D228DC0074900C /* LocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LocationViewController.xib; path = Classes/LocationViewController.xib; sourceTree = "<group>"; };
+		B5A0997B13D239E20074900C /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		B5A0997C13D239E20074900C /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		B5A0998713D23AAF0074900C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B5A0998E13D23D810074900C /* FriendListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListDataSource.h; sourceTree = "<group>"; };
+		B5A0998F13D23D810074900C /* FriendListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListDataSource.m; sourceTree = "<group>"; };
+		B5A0999513D23DFF0074900C /* FriendListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendListModel.h; path = Classes/FriendListModel.h; sourceTree = "<group>"; };
+		B5A0999613D23DFF0074900C /* FriendListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendListModel.m; path = Classes/FriendListModel.m; sourceTree = "<group>"; };
+		B5A0999A13D23E0B0074900C /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Friend.h; path = Classes/Friend.h; sourceTree = "<group>"; };
+		B5A0999B13D23E0B0074900C /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Friend.m; path = Classes/Friend.m; sourceTree = "<group>"; };
+		B5A09AC213D28FA90074900C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B5A09AC313D28FA90074900C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B5A09AC413D28FA90074900C /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DetailViewController.xib; path = Classes/DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +344,7 @@
 				B5A0988713D205430074900C /* SystemConfiguration.framework in Frameworks */,
 				B5A0988913D205430074900C /* libz.1.2.3.dylib in Frameworks */,
 				B5A0988B13D205520074900C /* CFNetwork.framework in Frameworks */,
+				B5A0998813D23AAF0074900C /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +355,8 @@
 			isa = PBXGroup;
 			children = (
 				B5A097BD13D1FFA40074900C /* Controllers */,
+				B5A0999E13D23E240074900C /* Models */,
+				B5A099AB13D23E450074900C /* Views */,
 				1D3623240D0F684500981E51 /* RadarAppDelegate.h */,
 				1D3623250D0F684500981E51 /* RadarAppDelegate.m */,
 			);
@@ -357,6 +384,7 @@
 				B5A0988613D205430074900C /* SystemConfiguration.framework */,
 				B5A0988813D205430074900C /* libz.1.2.3.dylib */,
 				B5A0988A13D205520074900C /* CFNetwork.framework */,
+				B5A0998713D23AAF0074900C /* CoreLocation.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -373,9 +401,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B5A09AC413D28FA90074900C /* DetailViewController.xib */,
 				320B6C86F11D9990244A9730 /* Three20.bundle */,
 				B5A097B913D1FF970074900C /* IntroViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				B5A0995913D228DC0074900C /* LocationViewController.xib */,
 				8D1107310486CEB800E47090 /* Radar-Info.plist */,
 			);
 			name = Resources;
@@ -469,6 +499,12 @@
 			children = (
 				B5A097B713D1FF970074900C /* IntroViewController.h */,
 				B5A097B813D1FF970074900C /* IntroViewController.m */,
+				B5A0995713D228DC0074900C /* LocationViewController.h */,
+				B5A0995813D228DC0074900C /* LocationViewController.m */,
+				B5A0997B13D239E20074900C /* FriendsViewController.h */,
+				B5A0997C13D239E20074900C /* FriendsViewController.m */,
+				B5A09AC213D28FA90074900C /* DetailViewController.h */,
+				B5A09AC313D28FA90074900C /* DetailViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -569,6 +605,27 @@
 				B5A0987D13D204E40074900C /* JSONKit.m */,
 			);
 			name = JSONKit;
+			sourceTree = "<group>";
+		};
+		B5A0999E13D23E240074900C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5A0999513D23DFF0074900C /* FriendListModel.h */,
+				B5A0999613D23DFF0074900C /* FriendListModel.m */,
+				B5A0999A13D23E0B0074900C /* Friend.h */,
+				B5A0999B13D23E0B0074900C /* Friend.m */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B5A099AB13D23E450074900C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5A0998E13D23D810074900C /* FriendListDataSource.h */,
+				B5A0998F13D23D810074900C /* FriendListDataSource.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -787,6 +844,8 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				B5A097BB13D1FF970074900C /* IntroViewController.xib in Resources */,
 				B5A097EB13D204A00074900C /* FBDialog.bundle in Resources */,
+				B5A0995B13D228DC0074900C /* LocationViewController.xib in Resources */,
+				B5A09AC613D28FA90074900C /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,6 +879,12 @@
 				B5A0985813D204BC0074900C /* ASINetworkQueue.m in Sources */,
 				B5A0987913D204CF0074900C /* Reachability.m in Sources */,
 				B5A0987E13D204E40074900C /* JSONKit.m in Sources */,
+				B5A0995A13D228DC0074900C /* LocationViewController.m in Sources */,
+				B5A0997D13D239E20074900C /* FriendsViewController.m in Sources */,
+				B5A0999013D23D810074900C /* FriendListDataSource.m in Sources */,
+				B5A0999713D23DFF0074900C /* FriendListModel.m in Sources */,
+				B5A0999C13D23E0B0074900C /* Friend.m in Sources */,
+				B5A09AC513D28FA90074900C /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
