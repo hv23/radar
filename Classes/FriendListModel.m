@@ -12,7 +12,7 @@
 
 @implementation FriendListModel
 //static NSString *lookup_url = @"http://radar.dev/nearby.json?lat=%@&lng=%@";
-static NSString *lookup_url = @"http://localhost/nearby.json?lat=%@&lng=%@";
+static NSString *lookup_url = @"http://radar.heroku.com/nearby.json?lat=%@&lng=%@";
 @synthesize location, friends, finished, resultsPerPage;
 
 - (id)initWithLocation:(CLLocation *)_location {

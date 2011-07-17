@@ -172,3 +172,11 @@ static NSString *_deviceId = nil;
 
 
 @end
+
+
+@implementation UINavigationBar (UINavigationBarCategory)
+- (void)drawRect:(CGRect)rect {
+    UIImage *img  = [UIImage imageNamed: @"NavBar.png"];
+    [img drawInRect:CGRectMake(0, 0, 320, 44)];
+}
+@end

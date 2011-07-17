@@ -23,12 +23,18 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"BackgroundPatternFullv3.png"]];
+    [facebookButton setBackgroundImage:[UIImage imageNamed:@"LoginWithFacebook.png"] forState:UIControlStateNormal];
+    [facebookButton setBackgroundImage:[UIImage imageNamed:@"LoginWithFacebook.png"] forState:UIControlStateSelected];
+    [facebookButton setBackgroundImage:[UIImage imageNamed:@"LoginWithFacebook.png"] forState:UIControlStateHighlighted];
+    
+     
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.

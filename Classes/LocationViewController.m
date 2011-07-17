@@ -31,12 +31,23 @@
     return self;
 }
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[self navigationController] setNavigationBarHidden:YES animated:NO];
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"BackgroundPatternFullv3.png"]];
+    UIImage *backgroundImage= [UIImage imageNamed:@"buttonAsset.png"];
+    UIImage *newImage = [backgroundImage stretchableImageWithLeftCapWidth:18.0 topCapHeight:2.0];
+    [lookupCurrentLocationButton setBackgroundImage:newImage forState:UIControlStateNormal];    
+    [lookupCurrentLocationButton setBackgroundImage:newImage forState:UIControlStateHighlighted];    
+    [lookupCurrentLocationButton setBackgroundImage:newImage forState:UIControlStateSelected];        
 }
-*/
+
+
+-(void)viewDidAppear:(BOOL)animated{
+    [[self navigationController] setNavigationBarHidden:YES animated:NO];
+}
 
 /*
 // Override to allow orientations other than the default portrait orientation.
