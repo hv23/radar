@@ -66,16 +66,15 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 2;
+    return 5;
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-	int sections[] = {1,2};
+	int sections[] = {1,2,2,1,2};
     return sections[section];
 }
-
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -87,7 +86,7 @@
 	NSUInteger row = [indexPath indexAtPosition:1];
 	
 	UITableViewCell *cell;
-	if (section == 0) {
+	if (section == 0 || section==4) {
 		cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 		if (cell == nil) {
 			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
@@ -105,11 +104,34 @@
 	}
 	if (section == 1) {
 		if (row==0) {
-			cell.textLabel.text = @"Location";
+			cell.textLabel.text = @"location";
 			cell.detailTextLabel.text = friend.location;
 		} else if (row==1) {
-			cell.textLabel.text = @"Network";
+			cell.textLabel.text = @"network";
 			cell.detailTextLabel.text = friend.network;
+		}
+	}
+	if (section == 2) {
+		if (row==0) {
+			cell.textLabel.text = @"phone";
+			cell.detailTextLabel.text = friend.phone;
+		} else if (row==1) {
+			cell.textLabel.text = @"email";
+			cell.detailTextLabel.text = friend.email;
+		}
+	}
+	if (section == 3) {
+		if (row==0) {
+			cell.textLabel.text = @"status";
+			cell.detailTextLabel.text = friend.latest_status;
+		}
+	}
+	if (section == 4) {
+		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+		if (row==0) {
+			cell.textLabel.text = @"View Profile";
+		} else if (row==1) {
+			cell.textLabel.text = @"Send a Message";
 		}
 	}
 	

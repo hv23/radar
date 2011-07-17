@@ -11,7 +11,9 @@
 
 @interface Friend : NSObject {
 	NSString *name, *location, *network, *profileImage, *profileUrl;
+	NSString *phone, *email, *latest_status;
 }
 
 @property (nonatomic, retain) NSString *name, *location, *network, *profileImage, *profileUrl;
+@property (nonatomic, retain) NSString *phone, *email, *latest_status;
 @end

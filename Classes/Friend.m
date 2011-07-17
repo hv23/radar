@@ -12,6 +12,7 @@
 @implementation Friend
 
 @synthesize name, location, network, profileImage, profileUrl;
+@synthesize phone, email, latest_status;
 
 - (void) dealloc {
 	TT_RELEASE_SAFELY(name);

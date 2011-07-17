@@ -88,7 +88,10 @@ static NSString *lookup_url = @"http://localhost/nearby.json?lat=%@&lng=%@";
 		f.location = [friend_dict objectForKey:@"location"];
 		f.profileUrl = [friend_dict objectForKey:@"link"];
 		f.profileImage = [friend_dict objectForKey:@"image"];
-
+		f.phone = [friend_dict objectForKey:@"phone"];
+		f.email = [friend_dict objectForKey:@"email"];
+		f.latest_status = [friend_dict objectForKey:@"last_status"];
+		
 		[_friends addObject:f];
 		TT_RELEASE_SAFELY(f);
 	}
